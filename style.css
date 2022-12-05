@@ -9,6 +9,8 @@ body {
 }
 
 
+/* Section 1 */
+
 .section-1 {
     background-color: #1f2937;
     height: 535px;
@@ -85,3 +87,41 @@ ul {
     box-shadow: inset 125px 0 0 0 white;
     color: black;
 }
+
+
+/* Section 2 */
+
+.beginner, .intermediate, .advanced, .kid {
+    width: 220px;
+    height: 300px;
+}
+
+.courses {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 36px;
+    font-weight: 800px;
+
+}
+
+.course-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-2 {
+    padding-bottom: 100px;
+    padding-top: 30px;
+}
+
+figcaption {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Section 3 */
+
+
+
