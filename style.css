@@ -3,16 +3,13 @@
     padding: 0;
 }
 
-html {
-    height: 100%;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: "roboto", sans-serif;
     display: flex;
     flex-direction: column;
-    box-sizing: inherit;
+
 }
 
 
@@ -44,12 +41,19 @@ ul {
     gap: 20px;
 }
 
+
+
 .header {
     /* background-color: rgb(160, 86, 97); */
     display: flex;
     justify-content: space-between;
     padding: 15px 205px 130px 205px;
 }
+
+.header a {
+  text-decoration: none;
+}
+
 
 .content {
     display: flex;
@@ -95,6 +99,7 @@ ul {
 #button:hover {
     box-shadow: inset 125px 0 0 0 white;
     color: black;
+    cursor: pointer;
 }
 
 
@@ -144,9 +149,11 @@ figcaption {
     padding: 100px;
 }
 
-span {
+.section-3 span {
     font-size: 36px;
     font-style: italic;
+    font-weight:lighter;
+    opacity: 80%;
     display: flex;
     padding: 0px 250px 0px 250px;
 }
@@ -158,19 +165,171 @@ span {
     padding-top: 50px;
 }
 
+/* Section 4 */
+
+.card {
+    padding: 70px;
+    background-color: #3882F6;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.left h4 {
+    font-size: 24px;
+}
+
+.left p {
+    opacity: 75%;
+}
+
+#button-2 {
+    height: 40px;
+    width: 120px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    
+}
+
+#button-2:hover {
+    background-color: white;
+    color: #3882F6;
+    cursor: pointer;
+}
+
+
+
+.section-4 {
+    padding: 80px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
 /* footer */
 
+.footer span {
+    font-size: 20px;
+    color: white;
+    opacity: 50%;
+}
 
 .footer {
     background-color: #1f2937;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    position: absolute;
-    right: 0;
-    left: 0;
+    padding: 20px;
+    height: 50px;
+
 }
+
+#lessons {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  #lessons:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #lessons:hover:before, #lessons:focus:before, #lessons:active:before {
+    left: 0;
+    right: 0;
+  }
+
+  #free {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  #free:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #free:hover:before, #free:focus:before, #free:active:before {
+    left: 0;
+    right: 0;
+  }
+
+  #contact {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  #contact:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: white;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  #contact:hover:before, #contact:focus:before, #contact:active:before {
+    left: 0;
+    right: 0;
+  }
 
 
 
